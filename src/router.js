@@ -8,6 +8,7 @@ import Main from './pages/main';
 import Currencies from "./pages/currencies";
 import Price from './pages/price';
 import { priceLoader } from "./loaders";
+import About from './pages/about'
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -28,8 +29,11 @@ const router = createBrowserRouter(
                     element={<Price/>} 
                     loader={priceLoader}
                 />
+                 <Route path="about" element={<About/>}
+            />
         </Route>
     )
 );
 
 export default router;
+
